@@ -1,0 +1,1 @@
+window.cube = window.cube;

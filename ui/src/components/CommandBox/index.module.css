@@ -1,0 +1,88 @@
+.CommandBox{
+    margin-top: 10px;
+    display: flex;
+    /* width: 580px; */
+    height: 45px;
+    background: rgba(24, 24, 24, 0.75);
+    /* -webkit-app-region: drag; */
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0px rgb(0, 0, 0, 0.5);
+}
+
+.CommandIcon{
+    cursor: pointer;
+    width: 32px;
+    height: 30px;
+    margin: 7.5px;
+    border-radius: 45px;
+    animation: icon-appear 0.5s;
+}
+
+@keyframes icon-appear{
+    0%{
+       opacity: 0.2;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.CommandIcon::after{
+    content: '';
+    border: none;
+    box-shadow: 15px 0 10px 2px rgb(0, 0, 0, 0.4);
+    height: 40px;
+    width: 1px;
+    display: block;
+    margin-left: 30px;
+    margin-top: -45px;
+    position: absolute;
+    animation: 0.4s border-appear 0.5s backwards;
+}
+
+
+.CommandIcon svg{
+    cursor: pointer;
+    border-radius: 4px;
+    -webkit-app-region: drag;
+}
+
+@keyframes border-appear {
+    0%{
+        width: 0px;
+        opacity: 0.5;
+    }
+    100%{
+        width: 1px;
+        opacity: 1;
+    }
+}
+
+@keyframes appear{
+    0%{
+        width: 0px;
+        opacity: 0.5;
+        padding-left: 15px;
+        padding-right: 5px;
+    }
+    100%{
+        width: 480px;
+        opacity: 1;
+        padding-left: 15px;
+        padding-right: 5px;
+    }
+}
+
+.CommandInput{
+    padding: 0px;
+    width: 0px;
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    animation: 0.5s appear 0.5s ease-out forwards;
+    -webkit-app-region: no-drag;
+}

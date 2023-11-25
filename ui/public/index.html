@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cube</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      background: transparent;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 600px;
+      height: 480px;
+      justify-content: center;
+    }
+
+    /* 让transparent和root铺满body*/
+    #transparent{
+      flex: 1;
+    }
+
+    #root{
+      display: flex;
+      justify-content: center;
+    }
+
+  </style>
+</head>
+<body>
+    <div id="root"></div>
+    <div id="transparent"></div>
+</body>
+</html>

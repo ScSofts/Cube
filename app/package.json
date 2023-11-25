@@ -1,0 +1,11 @@
+{
+  "name": "cube",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "26.6.1"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "main": "./index.js"
+}
