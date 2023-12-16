@@ -1,0 +1,52 @@
+.ResultBox{
+    display: flex;
+    flex-grow: 2;
+    flex-direction: column;
+    width: 540px;
+    background: rgba(24, 24, 24, 0.85);
+    /* -webkit-app-region: drag; */
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0px rgb(0, 0, 0, 0.5);
+    margin-top: 10px;
+    padding: 3.5px;
+
+    color: white;
+}
+
+.SearchResult{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 1.5px;
+    margin-top: 4.5px;
+}
+
+.SearchResult:nth-child(1){
+    margin-top: 0;
+}
+
+
+.SearchResultIcon>img{
+    width: 32px;
+    height: 32px;
+    margin: 3.5px;
+}
+
+.SearchResult:focus, .SearchResult:hover{
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+}
+
+.SearchResultContent{
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-left: 3.5px;
+}
+
+.SearchResultContentDescription{
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+}

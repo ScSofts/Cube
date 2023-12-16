@@ -8,7 +8,7 @@ export function CommandBox() {
     const [value, setValue] = useState('');
 
     return <div className={styles.CommandBox}>
-        <ReactSVG className={styles.CommandIcon} src={CommandSvg} />
+        <ReactSVG className={styles.CommandIcon} src={CommandSvg}/>
         <input type="text" 
             className={styles.CommandInput} 
             value={value} onChange={(e) => setValue(e.target.value)} 
